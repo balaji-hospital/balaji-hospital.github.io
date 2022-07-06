@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Details - Shree Balaji Hospital</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" href="images/logo.png">
+</head>
+
+<body>
+  <nav id="nav">
+    <div class="nav-content">
+      <div class="logo">
+        <a href="/home">Shree Balaji Hospital</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/mobile/options" style="font-size: 55px;"><b>☰</b></a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="home"></section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="text">
+    <center>
+      <h2>Details</h2>
+      <br>
+      <h3>
+        <p style="text-decoration: underline;">
+          Address
+        </p>
+        <br>
+        <p>
+          MG9H+XQ3, Unnamed Road, Dwaraka Nagar, Bhuktapur, Telangana 504001 <i
+            class='bx bx-current-location'></i><a href="https://goo.gl/maps/Sj2ryifdDMAXknMW6" style="color: blue;"
+            target="_blank"> Visit Hospital</a>
+        </p>
+        <br>
+        <p style="text-decoration: underline;">
+          Consultants
+        </p>
+        <br>
+        <p>
+          Dr.Vishali Anuguwar (PDL Dentist, Diet, Nutrition & Fitness Consultant) & Dr.Amit Sunder Rao (FCPS General
+          Surgeon)
+        </p>
+        <br>
+        <p style="text-decoration: underline;">
+          Timings
+        </p>
+        <br>
+        <p>
+          Open 10:00 AM to 8:00 PM Daily & Closed On Sundays
+        </p>
+        <br>
+        <p style="text-decoration: underline;">
+          Consultant Timings
+        </p>
+        <br>
+        <p>
+          Dr. Vishali Anuguwar:- 11:00 AM to 7:00 PM Daily(Not On Sundays)
+          <br>
+          Dr. Amit Sunder Rao:- 10:00 AM to 8:00 PM Daily(Not On Sundays)
+        </p>
+        <br>
+        <p style="text-decoration: underline;">
+          Services
+        </p>
+        <br>
+        <p>
+          General O.P, Surgical O.P, In patient & Out patient Services, Minor & Major Surgeries, Lab Facilities, Dental
+          Treatments, diet & nutrition consultancy
+        </p>
+      </h3>
+    </center>
+  </div>
+
+
+
+  <script>
+    let nav = document.querySelector("nav");
+    window.onscroll = function () {
+      if (document.documentElement.scrollTop > 20) {
+        nav.classList.add("sticky");
+      } else {
+        nav.classList.remove("sticky");
+      }
+    }
+  </script>
+  <script>
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      console.log("Mobile Device");
+    } else {
+      window.open("/details", "_self");
+    }
+  </script>
+  <script src="sketch.js"></script>
+</body>
+
+</html>
